@@ -10,7 +10,7 @@ class ListNode(object):
         :type l2: ListNode
         :rtype: ListNode
         """
-
+'''
 tests = {
     'a': {
         'l1': [2, 4, 3],
@@ -23,6 +23,7 @@ tests = {
          'sol': [8, 9, 9, 9, 0, 0 , 0, 1]
      }
 }
+'''
 
 def addTwoNumbers(l1, l2, carry=0):
     if not l1 and not l2 and carry == 0:
@@ -89,12 +90,11 @@ def linkedListToList(head):
         head = head.next
     return result
 
-
+'''
 # Test all
 for i in tests:
     print(linkedListToList(addTwoNumbers(listToLinkedList(tests[i]['l1']), listToLinkedList(tests[i]['l2']),0)))
 
-'''
 # Test one
 i = 'b'
 print(linkedListToList(addTwoNumbers(listToLinkedList(tests[i]['l1']), listToLinkedList(tests[i]['l2']),0)))
